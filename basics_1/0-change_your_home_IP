@@ -7,7 +7,7 @@
 cp /etc/hosts ~/hosts.new
 sed -i 's/127.0.0.1\tlocalhost/127.0.0.2\tlocalhost/g' ~/hosts.new
 sed -i 's/127.0.0.1\tip6-localhost/127.0.0.2\tip6-localhost/g' ~/hosts.new
-echo "8.8.8.8\tfacebook.com" >> ~/hosts.new
+printf "8.8.8.8\tfacebook.com\n" >> ~/hosts.new
 
 # Replace the system's hosts file with our new one
 cp -f ~/hosts.new /etc/hosts 
