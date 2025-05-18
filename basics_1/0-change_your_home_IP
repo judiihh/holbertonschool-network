@@ -5,9 +5,10 @@
 
 # Create a new hosts file with the required changes
 cp /etc/hosts ~/hosts.new
-sed -i 's/127.0.0.1\tlocalhost/127.0.0.2\tlocalhost/g' ~/hosts.new
-sed -i 's/127.0.0.1\tip6-localhost/127.0.0.2\tip6-localhost/g' ~/hosts.new
-printf "8.8.8.8\tfacebook.com\n" >> ~/hosts.new
+grep -v "localhost\|facebook" ~/hosts.new > ~/hosts.tmp
+echo "127.0.0.2 localhost" >> ~/hosts.tmp
+echo "8.8.8.8 facebook.com" >> ~/hosts.tmp
+cp -f ~/hosts.tmp /etc/hosts
 
 # Replace the system's hosts file with our new one
 cp -f ~/hosts.new /etc/hosts 
