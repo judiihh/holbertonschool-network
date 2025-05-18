@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
-# This script reconfigures host IP addresses directly from /etc/hosts
+# This script configures an Ubuntu server changing localhost and facebook.com resolution
 
-sudo cp /etc/hosts /etc/hosts.old
+# Create a new hosts file in home directory (which we can write to without sudo)
+cp /etc/hosts ~/hosts.new
 
-echo "127.0.0.2 localhost" > /etc/hosts
-echo "8.8.8.8 facebook.com" >> /etc/hosts
+# Replace 127.0.0.1 localhost with 127.0.0.2 localhost
+sed -i 's/127.0.0.1 localhost/127.0.0.2 localhost/g' ~/hosts.new
+
+# Add facebook.com entry (removing any existing ones first)
+sed -i '/facebook.com/d' ~/hosts.new
+echo "8.8.8.8 facebook.com" >> ~/hosts.new
+
+# Copy our modified version back to /etc/hosts
+cp -f ~/hosts.new /etc/hosts
