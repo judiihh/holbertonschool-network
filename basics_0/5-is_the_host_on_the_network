@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# Script to check network connectivity by pinging a specified IP
+# Ping an IP adress if passed as argument
 
 if [ "$#" -ne 1 ]; then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
     exit 1
 fi
 
-# Store the target IP from command line argument
-TARGET_IP=$1
+# Get the IP address from the argument
+IP_ADDRESS=$1
 
-# Send 5 ICMP echo requests to the target
-ping -c 5 "$TARGET_IP" 
+# Ping the IP address 5 times
+ping -c 5 "$IP_ADDRESS"
