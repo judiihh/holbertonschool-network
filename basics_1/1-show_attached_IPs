@@ -10,4 +10,4 @@ elif command -v ip &> /dev/null; then
 # Method 3: Fallback method using hostname
 else
     hostname -I | tr ' ' '\n' | grep -E '^([0-9]{1,3}\.){3}[0-9]{1,3}$' | sort
-fi 
+fi
