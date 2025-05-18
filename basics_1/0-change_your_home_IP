@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# This script modifies the hosts file to change IP resolutions for localhost and facebook.com
 
 # Backup the original hosts file
 sudo cp /etc/hosts /etc/hosts.bak
