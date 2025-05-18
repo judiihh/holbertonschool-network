@@ -34,10 +34,6 @@ At the end of this project, you will be able to explain to anyone, without the h
 - Memorize SSH, HTTP and HTTPS port numbers
 - What tool/protocol is often used to check if a device is connected to a network
 
-### Man pages:
-- netstat
-- ping
-
 ## Requirements 📋
 ### Bash script files
 - Allowed editors: vi, vim, emacs
@@ -53,7 +49,39 @@ At the end of this project, you will be able to explain to anyone, without the h
 - GitHub repository: holbertonschool-network
 - Directory: basics_0
 - Files:
-  - 0-OSI_model
+  - 0-OSI_model: Answers about the OSI model and its organization
+  - 1-types_of_network: Answers about different types of networks (LAN, WAN, Internet)
+  - 2-MAC_and_IP_address: Answers about MAC and IP addresses
+  - 3-UDP_and_TCP: Answers about UDP and TCP protocols
+  - 4-TCP_and_UDP_ports: Script to display listening ports with PID and program name
+  - 5-is_the_host_on_the_network: Script to ping an IP address 5 times
+
+## Tasks 📝
+### Task 0: OSI Model
+- Understanding the OSI model and its organization
+- Answer questions about the conceptual framework of network communication
+
+### Task 1: Types of Network
+- Understanding different types of networks (LAN, WAN, Internet)
+- Answer questions about network types in different scenarios
+
+### Task 2: MAC and IP Address
+- Understanding MAC addresses and IP addresses
+- Answer questions about network interface identification
+
+### Task 3: UDP and TCP
+- Understanding the differences between UDP and TCP protocols
+- Answer questions about data transfer characteristics
+
+### Task 4: TCP and UDP Ports
+- Create a script to display listening ports
+- Show PID and program name for each socket
+- Use netstat command with appropriate flags
+
+### Task 5: Is the Host on the Network
+- Create a script to ping an IP address
+- Implement argument checking
+- Ping the IP address 5 times
 
 ## Author ✍️
 - Judith - Holberton Coding School Student
