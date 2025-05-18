@@ -18,6 +18,9 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 EOL'
 
+# Flush DNS cache to ensure changes take effect immediately
+sudo systemctl restart systemd-resolved
+
 # Display a message about the changes
 echo "Hosts file has been updated:"
 echo "- localhost now resolves to 127.0.0.2"
