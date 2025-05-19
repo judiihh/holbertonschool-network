@@ -1,12 +1,12 @@
-# Request Flow Diagram: What happens when you type https://www.google.com
+# 🌐 Request Flow Diagram: What happens when you type https://www.google.com
 
-## Diagram
+## 📊 Diagram
 
 ```mermaid
 sequenceDiagram
     participant Browser
     participant DNS as DNS Servers
-    participant Firewall
+    participant Firewall as Firewall
     participant LB as Load Balancer
     participant WS as Web Server
     participant AS as Application Server
@@ -15,7 +15,7 @@ sequenceDiagram
     Note over Browser,DB: HTTPS Request Flow
 
     %% DNS Resolution
-    Browser->>DNS: DNS Query: google.com
+    Browser->>DNS: DNS Query: www.google.com
     DNS-->>Browser: Return IP Address
 
     %% TCP Connection & Firewall
@@ -43,51 +43,51 @@ sequenceDiagram
     Note over Browser: Render Page
 ```
 
-## Step-by-Step Explanation
+## 📝 Step-by-Step Explanation
 
-1. **DNS Resolution**
+1. **🔍 DNS Resolution**
    - Browser initiates DNS query for "www.google.com"
    - Query goes through local cache → OS cache → ISP DNS → Root DNS → TLD DNS → Authoritative DNS
    - Returns IP address to browser
 
-2. **TCP Connection & Firewall**
+2. **🔌 TCP Connection & 🛡️ Firewall**
    - Browser initiates TCP connection on port 443 (HTTPS)
    - Connection must pass through:
      - Local firewall
      - Google's firewall
    - SSL/TLS handshake establishes secure connection
 
-3. **Load Balancer**
+3. **⚖️ Load Balancer**
    - Request reaches Google's load balancer
    - Load balancer:
      - Checks server health
      - Applies load balancing algorithm
      - Routes to appropriate web server
 
-4. **Web Server**
+4. **🌐 Web Server**
    - Receives request
    - Handles static content
    - Forwards dynamic content requests to application server
 
-5. **Application Server**
+5. **⚡ Application Server**
    - Processes business logic
    - Generates dynamic content
    - Manages user sessions
    - Interacts with database
 
-6. **Database**
+6. **💾 Database**
    - Receives queries from application server
    - Returns requested data
    - Manages data consistency
 
-7. **Response Flow**
+7. **🔄 Response Flow**
    - Database → Application Server: Returns data
    - Application Server → Web Server: Sends generated content
    - Web Server → Load Balancer: Sends complete web page
    - Load Balancer → Browser: Delivers final response
    - Browser renders the page
 
-## Key Features Illustrated
+## ✨ Key Features Illustrated
 
 - 🔒 **Encryption**: SSL/TLS handshake shown in the diagram
 - 🛡️ **Security**: Firewall checkpoints included
@@ -96,12 +96,12 @@ sequenceDiagram
 - 💾 **Data Flow**: Database interaction shown
 - 🌐 **Web Stack**: Complete web stack components included
 
-## Technical Details
+## 🔧 Technical Details
 
-- **Ports**: Uses port 443 for HTTPS
-- **Protocols**: Shows HTTPS and TCP/IP
-- **Components**: Includes all required infrastructure elements
-- **Flow**: Demonstrates both request and response paths
-- **Security**: Illustrates encryption and firewall checks
+- **🔌 Ports**: Uses port 443 for HTTPS
+- **📡 Protocols**: Shows HTTPS and TCP/IP
+- **⚙️ Components**: Includes all required infrastructure elements
+- **🔄 Flow**: Demonstrates both request and response paths
+- **🔒 Security**: Illustrates encryption and firewall checks
 
 [Your diagram URL will be added here after publishing] 
