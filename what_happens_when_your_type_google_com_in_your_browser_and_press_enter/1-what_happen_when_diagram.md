@@ -104,4 +104,4 @@ sequenceDiagram
 - **🔄 Flow**: Demonstrates both request and response paths
 - **🔒 Security**: Illustrates encryption and firewall checks
 
-[Your diagram URL will be added here after publishing] 
+https://www.linkedin.com/pulse/journey-web-request-from-browser-google-back-judith-espinal-mart%25C3%25ADnez-cique
