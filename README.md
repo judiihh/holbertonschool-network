@@ -83,5 +83,31 @@ At the end of this project, you will be able to explain to anyone, without the h
 - Implement argument checking
 - Ping the IP address 5 times
 
+## 🌐 What happens when you type https://www.google.com in your browser and press Enter
+This project provides a detailed explanation of the technical process that occurs when you type a URL in your browser and press Enter. It's a classic interview question that tests understanding of web infrastructure and networking concepts.
+
+### 📚 Contents
+- Blog post explaining the entire process
+- Visual diagram of the request flow
+- Coverage of all required components:
+  - 🔍 DNS request
+  - 🔄 TCP/IP
+  - 🛡️ Firewall
+  - 🔒 HTTPS/SSL
+  - ⚖️ Load-balancer
+  - 🌐 Web server
+  - ⚡ Application server
+  - 💾 Database
+
+### 🎯 Learning Objectives
+- Understanding web request processing
+- Component roles in the web stack
+- Security measures in web communication
+- Data flow in web applications
+- Infrastructure components of modern web services
+
 ## ✍️ Author
-- Judith - Holberton Coding School Student
+Judith Espinal - Holberton Coding School Student
+
+## 📄 License
+This project is part of the Holberton School curriculum and is open source.
