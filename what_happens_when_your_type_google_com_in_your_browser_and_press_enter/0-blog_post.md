@@ -125,4 +125,4 @@ The browser then:
 
 This complex process, which happens in milliseconds, involves multiple layers of technology working together seamlessly. Understanding this process is crucial for web developers, system administrators, and anyone working with web technologies. It demonstrates the sophisticated infrastructure that powers the modern web and highlights the importance of each component in delivering a fast, secure, and reliable web experience.
 
-[Your blog post URL will be added here after publishing on Medium or LinkedIn] 
+https://www.linkedin.com/pulse/journey-web-request-from-browser-google-back-judith-espinal-mart%25C3%25ADnez-cique
